@@ -27,7 +27,7 @@ from compiler.errors import compiler as errors_compiler
 with open("requirements.txt", encoding="utf-8") as r:
     requires = [i.strip() for i in r]
 
-with open("pyrogram/__init__.py", encoding="utf-8") as f:
+with open("hikkapyro/__init__.py", encoding="utf-8") as f:
     version = re.findall(r"__version__ = \"(.+)\"", f.read())[0]
 
 with open("README.md", encoding="utf-8") as f:
@@ -38,13 +38,13 @@ if len(argv) > 1 and argv[1] in ["bdist_wheel", "install", "develop"]:
     errors_compiler.start()
 
 setup(
-    name="Pyrogram",
+    name="Hikka-Pyro",
     version=version,
     description="Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/pyrogram",
-    download_url="https://github.com/pyrogram/pyrogram/releases/latest",
+    url="https://github.com/hikariatama/hikka-pyro",
+    download_url="https://github.com/hikariatama/hikka-pyro/releases/latest",
     author="Dan",
     author_email="dan@pyrogram.org",
     license="LGPLv3",
