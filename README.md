@@ -22,6 +22,8 @@
     </a>
 </p>
 
+This fork is being maintained following the specific needs of [Hikka userbot](https://github.com/hikariatama/Hikka).
+
 ## Pyrogram
 
 > Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots
